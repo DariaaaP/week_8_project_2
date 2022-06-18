@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Intro";
+    text-align: left;
+    letter-spacing: 0em;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 72px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 20px;
+}
+p {
+    font-family: "Roboto_Slab";
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card__news h2 {
+    color: white;
+}
+
+@font-face {
+    font-family: "Intro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/IntroDemo-BlackCAPS.otf");
+}
+
+@font-face {
+    font-family: "Roboto_Slab"; 
+    src: url("./fonts/RobotoSlab-VariableFont_wght.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+.header {
+    width: 100%;
+}
+.header__img {
+    width: 100%;
+}
+.header__nav-header {
+    width: 91%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3% auto;
+}
+.header__nav-logo {
+    width: 11%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #5222D0;
+    border-radius: 100px;
+
+    color: white;
+    font-family: "Intro";
+    text-align: left;
+    letter-spacing: 0em;
+}
+.btn__card {
+    height: 84px;
+    width: 270px;
+
+    margin: 7% 0; 
+
+    font-size: 35px;
+    line-height: 35px;
+}
+.btn__basket {
+    height: 38px;
+    width: 115px;
+
+    font-size: 13px;
+    line-height: 13px;
+}
+.btn__subs {
+    height: 38px;
+    width: 135px;
+
+    margin-top: 5%;
+
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.container {
+    width: 93%;
+    margin: auto;
+    margin-bottom: 5%; 
+}
+.container_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 7%;
+    margin-right: 0;
+}
+.container_grid {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+.container__padding-box {
+    padding-left: 2.5%;
+}
+.container__content-flex {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container__content-grid {
+    display: grid;
+    grid-template-rows: 1fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container__content-text {
+    margin-right: 5%;
+}
+.container__img {
+    width: 55%;
+    display: flex;
+    justify-content: end;
+}
+.container__content-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__card {
+    width: 440px;
+    padding: 5% 6%;
+}
+.container__card:first-child {
+    border: 1px solid rgba(236, 97, 91, 1);
+}
+.card-border {
+    margin-left: -4%;
+    padding-left: 9%;
+
+    border: 1px solid rgba(236, 97, 91, 1);
+}
+.card__news {
+    width: 385px;
+    margin: 0 6%;
+
+    background-color: #EC615B;
+}
+.container__input {
+    width: 323px;
+    height: 50px;
+    padding-left: 14px;
+
+    font-family: "Roboto_slab";
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.container__content-navigation-link {
+    font-family: "Roboto_slab";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+}
+.container__content-navigation-link:hover {
+    color:brown;
+}
+.links-op {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.link-main {
+    color: rgba(82, 34, 208, 1);
+}
+.link-op {
+    color: rgba(0, 0, 0, 1);
+}
+
+.footer {
+    margin: 5% 0;
+}
+
+@media screen and (max-width: 1240px) {
+    h1 {
+        text-align: center;
+    }
+    .container {
+        align-items: center;
+    }
+    .container_flex {
+        margin: 0 auto;
+        flex-direction: column-reverse;
+    }
+    .container__img {
+        width: 50%;
+    }
+    .container__content-flex {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .container__content-grid {
+        display: grid;
+        gap: 3%;
+        grid-template-rows: 1fr 1fr 0.3fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .links-op {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .container__content-flex {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .container__content-grid {
+        margin: auto;
+        gap: 1%;
+        grid-template-rows: repeat(3,1fr) repeat(3,0.5fr);
+        grid-template-columns: 1fr;
+    }
+    .card-border {
+        margin-left: 0;
+        padding: 5% 6%;
+    }
+}
